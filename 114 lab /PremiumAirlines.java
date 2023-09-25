@@ -14,6 +14,8 @@ public class PremiumAirlines {
         System.out.print("Please enter current points: ");
         int point = scan.nextInt();
 
+        scan.close();
+        
         if(mem.equals("Diamond")) {
             if(price>=5000) {
                 point+=35;

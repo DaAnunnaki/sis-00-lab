@@ -5,6 +5,7 @@ public class ChangeMaker {
         System.out.print("Enter amount: ");
         Scanner input = new Scanner(System.in);
         int change = (int)(input.nextDouble() * 100);
+        input.close();
         hundred = change / 10000;
         rem = change % 10000;
         fifties = rem / 5000;

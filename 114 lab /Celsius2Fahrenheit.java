@@ -7,6 +7,7 @@ public class Celsius2Fahrenheit {
 
         System.out.print("Enter a degree in Celsius: ");
         int c = scan.nextInt();
+        scan.close();
 
         double f = 0.0;
         f = (9.0/5) * c + 32;

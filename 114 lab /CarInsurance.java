@@ -14,6 +14,7 @@ public class CarInsurance {
 
         System.out.print("Please enter in either Male or Female for gender: ");
         String sex = scan.next();
+        scan.close();
 
         if(age>=18 && age<21 && sex.equals("Male")) {
             pre*=1;

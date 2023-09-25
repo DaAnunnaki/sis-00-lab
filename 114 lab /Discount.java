@@ -8,6 +8,7 @@ public class Discount {
         double p = scan.nextInt();
         System.out.print("Quantity: ");
         int q = scan.nextInt();
+        scan.close();
 
         double dp = 0.0;
         double apu = 0.0;

@@ -22,5 +22,7 @@ public class other {
         System.out.println(byteOne);
 
         //System.out.println("Hyde "42/8-3" Park");
+
+        System.out.println((int)(Math.random() * 18) -27 + "okay");
     }
 }

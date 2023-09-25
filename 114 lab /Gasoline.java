@@ -12,6 +12,7 @@ public class Gasoline {
         double mpg = scan.nextDouble();
         System.out.println("Consumed gas for the period (in gallons): " + min/60*mph*1/mpg);
 
+        scan.close();
 
 
     }
