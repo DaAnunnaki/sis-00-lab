@@ -6,7 +6,6 @@ public class ArmstrongNumbers {
 
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> array = new ArrayList<Integer>(); 
-        ArrayList<Integer> digit = new ArrayList<Integer>(); 
 
         System.out.print("Enter the lower limit: ");
         int low = scan.nextInt();
