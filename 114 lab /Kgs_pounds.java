@@ -7,7 +7,8 @@ public class Kgs_pounds {
         System.out.print("enter amount: ");
 
         int x = scan.nextInt();
-
+        scan.close();
+        
         System.out.println("kg\tpounds\t\tpound\tkilogram");
 
         int kg = 1;

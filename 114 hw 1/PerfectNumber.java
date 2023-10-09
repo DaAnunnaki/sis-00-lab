@@ -7,6 +7,7 @@ public class PerfectNumber {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the upper limit: ");
         int up = scan.nextInt();
+        scan.close();
 
         ArrayList<Integer> array = new ArrayList<>();
 

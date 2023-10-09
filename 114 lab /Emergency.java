@@ -1,9 +1,5 @@
-import java.util.Scanner;
-
 public class Emergency {
     public static void main(String[] arg) {
-
-        Scanner scan = new Scanner(System.in);
 
         System.out.println(emergency("Hello, my name is John Smith. I need to report a fire. Please come to 100 Circle Road.")); 
         // expecting "a fire at 100 Circle Road reported by John Smith"

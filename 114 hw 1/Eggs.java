@@ -7,6 +7,8 @@ public class Eggs {
         Scanner scan = new Scanner(System.in);
         int egg = scan.nextInt();
 
+        scan.close();
+        
         double money; 
         int dozen, rem;
         dozen = egg/12;

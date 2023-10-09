@@ -5,6 +5,7 @@ public class ReversedString {
         Scanner scan = new Scanner(System.in);
         System.out.print("input: ");
         String str = scan.nextLine();
+        scan.close();
 
         System.out.println(new StringBuilder(str).reverse().toString());
     }

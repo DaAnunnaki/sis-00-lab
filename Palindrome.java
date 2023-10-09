@@ -5,6 +5,8 @@ public class Palindrome {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the input string: ");
         String input = scan.nextLine();
+        scan.close();
+        
         String str = input;
         for(int i = 0; i<input.length(); i++) {
             if(input.substring(i, i+1).equals(" ")) {

@@ -8,6 +8,7 @@ public class Pyramid {
         
             int numOfNum = 1;
             int l = scan.nextInt();
+            scan.close();
             
             for(int num = l; num>0; num--) { //loop thru lines
                 for(int p =num; p>0; p--) {

@@ -11,6 +11,7 @@ public class GasRefillCalculator {
         double mpg = scan.nextDouble();
         System.out.print("Enter the price: ");
         double price = scan.nextDouble();
+        scan.close();
 
         double p = (double)mile/mpg*price;
         System.out.println("Price for the trip: "+ p);

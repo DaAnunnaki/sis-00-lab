@@ -1,23 +1,36 @@
 public class Emirp {
     public static void main(String[] arg) {
 
-        for(int i = 0; i<=100; i++) {
-
+        int x = 0;
+        int i = 13;
+        while(x<100) {
+            if(prime(i) && non_palindrome(i)) {
+                System.out.print(i+" ");
+                x++;
+            }
+            i++;
         }
-
     }    
 
     public static boolean non_palindrome(int n) {
-        return true;
+        String p = Integer.toString(n);
+        String str = new StringBuilder(p).reverse().toString();
+        int i = Integer.valueOf(str);
+        if(i!=n && prime(i)) { // eliminate num like 101, 151 etc
+            return true;
+        } else return false;
     }
 
     public static boolean prime(int n) {
-        for(int i = 0; i<n; i++) {
-            if(n%n!=0) {
-                return false;
+        int x = 0;
+        for(int i = 1; i<n; i++) {
+            if(n%i==0) {
+                x++;
             } 
         }
-        return true;
+        if(x==1) {
+            return true;
+        } else return false;
     }
 }
 

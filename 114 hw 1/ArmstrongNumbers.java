@@ -13,6 +13,8 @@ public class ArmstrongNumbers {
         System.out.print("Enter the upper limit: ");
         int high = scan.nextInt();
 
+        scan.close();
+
         for(int i = low; i<=high; i++) {
             String num = Integer.toString(i);
             int m = 0;

@@ -5,6 +5,7 @@ public class CountVowelsAndConsonants {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a string: ");
         String str = scan.nextLine();
+        scan.close();
         str = str.toLowerCase();
 
         int v = 0;

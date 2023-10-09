@@ -6,6 +6,7 @@ public class CharacterCount {
         System.out.print("Enter a string: ");
         String str = scan.nextLine().toLowerCase();
         System.out.print("Enter a character: ");
+        scan.close();
         char c = scan.next().toLowerCase().charAt(0);
         
         System.out.println(count(str, c));

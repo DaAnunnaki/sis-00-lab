@@ -7,6 +7,7 @@ public class IsLeapYear {
         Scanner scan = new Scanner(System.in);
 
         int year = scan.nextInt();
+        scan.close();
 
         System.out.print(year);
         if(year%400 == 0) {

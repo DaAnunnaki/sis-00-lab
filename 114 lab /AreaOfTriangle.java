@@ -6,6 +6,7 @@ public class AreaOfTriangle {
         System.out.print("Enter the values of base and height: ");
         double base = scan.nextInt();
         double h = scan.nextInt();
+        scan.close();
         System.out.println("Area of this trangle with base "+base+" and height "+h+" is: "+areaOfTriangle(base, h));
     }
 

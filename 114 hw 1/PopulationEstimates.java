@@ -6,6 +6,7 @@ public class PopulationEstimates {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a year: ");
         int year = scan.nextInt();
+        scan.close();
          
         String str = year+"";
         String n = str.substring(2, 4);

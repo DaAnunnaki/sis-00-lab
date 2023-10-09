@@ -8,6 +8,7 @@ public class Interests {
         double loan = scan.nextDouble();
         System.out.print("Number of years: ");
         int year = scan.nextInt();
+        scan.close();
 
         System.out.println("Interest Rate\tMonthly Payment\tTotal Payment");
         double increment = 0.125;

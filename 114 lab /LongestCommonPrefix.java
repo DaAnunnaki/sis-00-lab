@@ -9,9 +9,10 @@ public class LongestCommonPrefix {
 
         System.out.print("Enter the second string: ");
         String sec = scan.nextLine();
+        scan.close();
 
-        String[] words = first.split("\\s+");
-        String[] ww = sec.split("\\s+");
+        // String[] words = first.split("\\s+");
+        // String[] ww = sec.split("\\s+");
 
 /*      String com = "";
         for(int i = 0; i<words.length; i++) {

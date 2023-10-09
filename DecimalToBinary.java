@@ -1,9 +1,16 @@
+import java.util.Scanner;
+
 public class DecimalToBinary {
     public static void main(String[] args) {
 
+        System.out.println("Enter decimal: ");
+        int decimal = new Scanner(System.in).nextInt();
+
+        String binary = Integer.toBinaryString(decimal);
+
+        System.out.println("Binary: " + binary);
     }
 }
-
 /*
  *  (DecimalToBinary.java) Write a method that converts a decimal number into a binary number as a string. The method header is:
 public static String dec2Bin(int value)

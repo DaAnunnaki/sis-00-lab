@@ -7,6 +7,7 @@ public class ShowMeTheMoney {
         System.out.print("Enter in the number of farthings: ");
         Scanner scan = new Scanner(System.in);
         int input = scan.nextInt();
+        scan.close();
 
         int sterling, shilling, penny, rem;
 

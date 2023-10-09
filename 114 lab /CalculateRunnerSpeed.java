@@ -9,6 +9,7 @@ public class CalculateRunnerSpeed {
         int m = scan.nextInt();
         System.out.print("Input the time in minutes: ");
         int min = scan.nextInt();
+        scan.close();
         double hr = (double)min/60.0;
 
         double speed = (double)m / hr;
