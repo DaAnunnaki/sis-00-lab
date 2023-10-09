@@ -25,7 +25,7 @@ public class LongestCommonPrefix {
 
         String com = "";
         for(int i = 0; i<first.length(); i++) {
-            if(i<=sec.length()) {
+            if(i<sec.length()) {
                 int x = i+1;
                 if(first.substring(i, x).equals(sec.substring(i, x))) {
                     com+=first.substring(i, x);
