@@ -6,18 +6,21 @@ public class Palindrome {
         System.out.print("Enter the input string: ");
         String input = scan.nextLine();
         scan.close();
-        
+        System.out.println(isPalindrome(input));
+    }
+
+    public static String isPalindrome(String input) {
         String str = input;
         for(int i = 0; i<input.length(); i++) {
             if(input.substring(i, i+1).equals(" ")) {
                 str = str.substring(0, i)+str.substring(i+1, str.length());
             }
         }
-        if(new StringBuilder(str).reverse().equals(str)) {
-            System.out.println("Input string "+input+" is a palindrome");
-        } else {
-            System.out.println("Input string "+input+" is NOT a palindrome");
-        }
+        String reversed = new StringBuilder(str).reverse().toString();
+        if(reversed.equals(str)) {
+            return "Input string "+input+" is a palindrome";
+        } else { return "Input string "+input+" is NOT a palindrome";
+    }
     }
 }
 /*

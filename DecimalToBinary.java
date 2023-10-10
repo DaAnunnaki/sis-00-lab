@@ -3,12 +3,14 @@ import java.util.Scanner;
 public class DecimalToBinary {
     public static void main(String[] args) {
 
-        System.out.println("Enter decimal: ");
+        System.out.print("Enter decimal: ");
         int decimal = new Scanner(System.in).nextInt();
+        System.out.println(dec2Bin(decimal));
+    }
 
-        String binary = Integer.toBinaryString(decimal);
-
-        System.out.println("Binary: " + binary);
+    public static String dec2Bin(int value) {
+        String binary = Integer.toBinaryString(value);
+        return "Binary: "+binary;
     }
 }
 /*

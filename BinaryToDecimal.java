@@ -2,9 +2,14 @@ import java.util.Scanner;
 
 public class BinaryToDecimal {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter binary: ");
+        String bin = new Scanner(System.in).nextLine();
+        System.out.println("Decimal: " +bin2Dec(bin));
+    }
 
-        scan.close();
+    public static int bin2Dec(String binaryString) {
+        int dec = Integer.parseInt(binaryString, 2);
+        return dec;
     }
 }
 
