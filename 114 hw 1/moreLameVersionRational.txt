@@ -1,0 +1,112 @@
+import java.util.Scanner;
+
+public class Rational {
+
+    private static int numerator, denominator;
+
+    public static void Rational(int a, int b) {
+        if(a<b) {
+            int z = a;
+            b=a;
+            a=z;
+        }
+        int num = 0;
+        for(int i = 1; i<=b; i++) {
+            if(a%i==0 && b%i==0) {
+                num = i;
+            }
+        }
+        numerator = a/num;
+        denominator = b/num;
+        System.out.println(numerator+"/"+denominator);
+    }
+
+    public static int addition(int a, int b) {
+        return ;
+    }
+
+    public static int subtraction(int a, int b) {
+        return ;
+    }
+
+    public static int multiplication(int a, int b) {
+        return ;
+    }
+
+    public static int division(int a, int b) {
+        return ;
+    }
+
+    public static String print(int a, int b) {
+        return numerator+"/"+denominator;
+    }
+
+    public static void main(String[] args) {
+        /*
+         * Enter numerator for the first rational number: 4
+Enter a non-zero denominator for the first rational number: 6
+Enter numerator for the second rational number: 1
+Enter a non-zero denominator for the second rational number: 4
+First rational number is: 2/3
+Second rational number is: 1/4
+Addition of the rational numbers is: 11/12
+Subtraction of the rational numbers is: 5/12
+Multiplication of the rational numbers is: 1/6
+Division of the rational numbers is: 8/3 [10]
+         */
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter numerator for the first rational number: ");
+        int a = scan.nextInt();
+        System.out.println("Enter a non-zero denominator for the first rational number: ");
+        int b = scan.nextInt();
+        System.out.println("First rational number is: " +Rational(a, b));
+
+    }
+
+}
+
+/*
+ * Create a class called Rational for performing arithmetic with fractions. 
+ * Use integer variables to represent the private instance variables of the class: the numerator and the denominator. 
+ * 
+- Provide a constructor that enables an object of this class to be initialized when it’s declared with numerator and denominator. 
+The constructor should store the fraction in reduced form such that the greatest common divider between the absolute value of the numerator 
+and the absolute value of the denominator is 1, and the denominator > 0. 
+For example, the fraction 2/4 is equivalent to 1/2 and would be stored in the object as 1 in the numerator and 2 in the denominator. 
+
+- Provide a no-argument constructor with default values in case no initializers are provided with numerator 0 and denominator 1 (because no division by 0 is allowed. 
+Note: the denominator cannot be 0). 
+
+Provide public methods that perform each of the following operations:
+- Add two Rational numbers: The result of the addition should be a Rational number.
+- Subtract two Rational numbers: The result of subtraction should be a Rational number.
+- Multiply two Rational numbers: The result of the multiplication should be a Rational number.
+- Divide two Rational numbers: The result of the division should be a Rational number.
+- print() to Rational number in the form a/b, where a is the numerator and b is the denominator.
+Provide a main method that tests all the methods as in this sample run:
+Enter numerator for the first rational number: 4
+Enter a non-zero denominator for the first rational number: 6
+Enter numerator for the second rational number: 1
+Enter a non-zero denominator for the second rational number: 4
+First rational number is: 2/3
+Second rational number is: 1/4
+Addition of the rational numbers is: 11/12
+Subtraction of the rational numbers is: 5/12
+Multiplication of the rational numbers is: 1/6
+Division of the rational numbers is: 8/3 [10]
+
+
+if(x<y) {
+            int z = y;
+            y=x;
+            x=z;
+        }
+        int num = 0;
+        for(int i = 1; i<=y; i++) {
+            if(x%i==0 && y%i==0) {
+                num = i;
+            }
+        }
+
+
+ */
